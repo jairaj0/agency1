@@ -1,0 +1,103 @@
+.navLink{
+    position: relative;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: .5rem;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    transition: all .3s ease-out;
+}
+
+.navLink:hover{
+    width: 105px;
+    border-bottom-color: black;
+    border-top-color: black;
+}
+
+.navLink span{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 400;
+    position: absolute;
+    transition: all .3s ease-out;
+    opacity: 0;
+    left: 13px;
+}
+span:nth-child(1){
+    opacity: 1;
+}
+
+.navLink:hover span:nth-child(1) {
+    left: 13px;
+    opacity: 1;
+  }
+  
+  .navLink:hover span:nth-child(2) {
+    left: 35px;
+    opacity: 1;
+  }
+  
+  .navLink:hover span:nth-child(3) {
+    left: 60px;
+    opacity: 1;
+  }
+  
+  .navLink:hover span:nth-child(4) {
+    left: 85px;
+    opacity: 1;
+  }
+
+
+
+  .title{
+    font-size: 50px;
+    font-family: sans-serif;
+    position: relative;
+    width: 180px;
+    height: 50px;
+    overflow: hidden;
+  }
+
+  .title span{
+    position: absolute;
+  }
+
+  .title span:nth-child(1){
+    animation: fadeIn 1s ease-out forwards;
+    opacity : 0;
+  }
+
+  .title span:nth-child(2){
+    left: 37px;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: .1s;
+    opacity : 0;
+  }
+
+  .title span:nth-child(3){
+    left: 80px;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: .2s;
+    opacity : 0;
+  }
+
+  .title span:nth-child(4){
+    left: 120px;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: .3s;
+    opacity : 0;
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 1;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

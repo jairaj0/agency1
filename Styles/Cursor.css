@@ -1,0 +1,25 @@
+
+.cursor{
+    pointer-events: none;
+    position: fixed;
+    display: block;
+    border-radius: 0;
+    transform-origin: center center;
+    z-index: 99998;
+    mix-blend-mode: difference;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    transition: transform 1s ease-in-out;
+    transform: scale(1);
+}
+
+.cur_move{
+    transform: scale(0.3);
+    transition: transform 5s ease-out;
+    transition-delay: .2s;
+}
+
+
