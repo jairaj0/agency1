@@ -9,81 +9,22 @@ nav {
   mix-blend-mode: difference;
 }
 nav .navLink {
-  position: relative;
-  width: 45px;
-  height: 40px;
+  height: 45px;
+  justify-content: flex-start;
   border: 1px solid var(--light);
-  border-radius: 4rem;
-  padding: 0.5rem;
+  border-radius: 5rem;
+  padding-left: 0.8rem;
   border-bottom-color: transparent;
   border-top-color: transparent;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-in-out;
   color: var(--light);
   margin: 1rem;
 }
-nav .navLink:hover {
-  width: 125px;
-}
-nav .navLink1:hover {
-  width: 190px;
-}
-nav .navLink2:hover {
-  width: 115px;
-}
-nav .navLink3:hover {
-  width: 150px;
-}
 nav .navLink span {
   font-size: 30px;
+  color: var(--light);
   font-family: sans-serif;
-  font-weight: 400;
-  position: absolute;
-  transition: all 0.3s ease-out;
-  opacity: 0;
-  left: 13px;
-  z-index: 10;
+  position: relative;
+  transition: all 0.5s ease-in-out;
   mix-blend-mode: difference;
-}
-nav .navLink span:nth-child(1) {
-  opacity: 1;
-}
-nav .navLink:hover span:nth-child(1) {
-  left: 13px;
-  opacity: 1;
-}
-nav .navLink:hover span:nth-child(2) {
-  left: 35px;
-  opacity: 1;
-}
-nav .navLink:hover span:nth-child(3) {
-  left: 60px;
-  opacity: 1;
-}
-nav .navLink2:hover span:nth-child(3) {
-  left: 55px;
-  opacity: 1;
-}
-nav .navLink:hover span:nth-child(4) {
-  left: 85px;
-  opacity: 1;
-}
-nav .navLink2:hover span:nth-child(4) {
-  left: 80px;
-  opacity: 1;
-}
-nav .navLink:hover span:nth-child(5) {
-  left: 105px;
-  opacity: 1;
-}
-nav .navLink:hover span:nth-child(6) {
-  left: 130px;
-  opacity: 1;
-}
-nav .navLink2:hover span:nth-child(6) {
-  left: 115px;
-  opacity: 1;
-}
-nav .navLink:hover span:nth-child(7) {
-  left: 155px;
-  opacity: 1;
 }/*# sourceMappingURL=navbar.css.map */

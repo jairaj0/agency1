@@ -1,7 +1,7 @@
 
 .cursor{
     pointer-events: none;
-    position: fixed;
+    position: absolute;
     display: block;
     border-radius: 0;
     transform-origin: center center;
@@ -11,7 +11,6 @@
     width: 30px;
     border-radius: 50%;
     background-color: #fff;
-    position: absolute;
     transition: transform 1s ease-in-out;
     transform: scale(1);
 }
