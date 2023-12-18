@@ -1,0 +1,19 @@
+.showCase {
+  height: 200vh;
+  margin-top: 5rem;
+}
+.showCase .centerVid {
+  position: sticky;
+  top: 0;
+}
+.showCase video {
+  width: 100%;
+}
+.showCase .bigtext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 200px;
+  color: var(--light);
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=Video.css.map */

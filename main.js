@@ -101,3 +101,44 @@ const titleAnimation = (ele) => {
 const heroTitle = document.querySelector('.hero .title');
 
 titleAnimation(heroTitle)
+
+//form_discription
+
+const element = document.querySelector(".form_discription p");
+
+function mapValue(value, inMin, inMax, outMin, outMax) {
+  // Ensure the value is within the input range
+  value = Math.min(Math.max(value, inMin), inMax);
+
+  // Calculate the percentage of the value within the input range
+  const percentage = (value - inMin) / (inMax - inMin);
+
+  // Map the percentage to the output range
+  const mappedValue = outMin + percentage * (outMax - outMin);
+
+  return mappedValue;
+}
+
+document.addEventListener('scroll', ()=>{
+  const rect = element.getBoundingClientRect();
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+  const mappedValue = mapValue(rect.top, 0, viewportHeight, 1, 0.3);
+  element.style.opacity = mappedValue;
+})
+
+// video
+
+const stickyDiv = document.querySelector(".showCase");
+const bigText = document.querySelector(".bigtext");
+
+document.addEventListener('scroll', ()=>{
+  const rect = stickyDiv.getBoundingClientRect();
+  // const rectText = bigText.getBoundingClientRect();
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+  console.log(rect.top+500)
+  const mappedValue = mapValue(rect.top + 300, 0, viewportHeight, 1, 0.5);
+  const mappedValueText = mapValue(rect.top + 400, 0, viewportHeight, 1145, 2 * window.innerWidth);
+  stickyDiv.style.scale = mappedValue;
+  bigText.style.width = `${mappedValueText}px`;
+  // console.log(mappedValueText )
+})

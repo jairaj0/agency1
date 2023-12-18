@@ -1,0 +1,21 @@
+.showCase {
+    height: 200vh;
+    margin-top: 5rem;
+    .centerVid{
+        position: sticky;
+        top: 0;
+    }
+    video{
+        width: 100%;
+    }
+    .bigtext{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 200px;
+        color: var(--light);
+        transform: translate(-50% , -50%);
+    }
+}
+
+

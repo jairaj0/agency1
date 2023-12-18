@@ -1,5 +1,31 @@
+h3{
+    color: var(--light);
+    font-size: 30px;
+    position: relative;
+    top: 80vh;
+    padding: .5rem 1.5rem;
+    border: 1px solid var(--light);
+    width: fit-content;
+    /* border-top-color: transparent; */
+    /* border-bottom-color: transparent; */
+    border-radius: 3rem;
+    position: relative;
+}
 
 
 
+h3 span{
+    width: 50%;
+    height: 1px;
+    /* background-color: var(--light); */
+    background-color: red;
+    position: absolute;
+    left: 14%;
+    top: -1px;
+}
 
-
+h3 span:nth-child(2){
+    top: 100%;
+    right: 14%;
+    background-color: cyan;
+}
